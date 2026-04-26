@@ -1,0 +1,50 @@
+# --- Security & Credentials ---
+.env
+.streamlit/secrets.toml
+
+# --- Medical/Research Data (PHII Safeguard) ---
+# Ignore all CSVs and Excels by default to prevent accidental data leaks
+*.csv
+*.xlsx
+*.xls
+# If you want to keep specific template files, you can exclude them like this:
+# !template.csv
+
+# --- Python Environment & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# --- Streamlit & Web ---
+.streamlit/config.toml
+node_modules/
+
+# --- Jupyter & Analysis ---
+.ipynb_checkpoints/
+.virtual_documents/
+
+# --- Operating System Artifacts ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
